@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @Author: wei yin
+ * @Date: 2023-02-16 16:40:30
+ * @LastEditors: wei yin
+ * @LastEditTime: 2023-03-05 20:41:04
+ * @Description:
+ */
+import React from 'react'
+import './App.css'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import Login from './pages/login/login'
 
-function App() {
+function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter>
+        <Routes>
+          <Route path='/' element={<Login/>}></Route>
+        </Routes>
+      </HashRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
