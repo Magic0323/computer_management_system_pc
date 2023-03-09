@@ -6,3 +6,7 @@
 .layout .head {
   width: 100%;
 }
+.layout .content {
+  padding: 20px;
+  width: 100%;
+}

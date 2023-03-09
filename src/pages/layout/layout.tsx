@@ -11,8 +11,9 @@ import './layout.css'
 const Layout: React.FC = () => (
   <div className="layout">
     <img className='head' src={require('../../assets/images/head.png')} />
-    layout
-    <Outlet />
+<div className="content">
+<Outlet />
+</div>
   </div>
 )
 export default Layout
